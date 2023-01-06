@@ -1,0 +1,27 @@
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  transition: background-color .25s;
+  color: var(--color-text);
+  background: var(--app-bar-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  --webkit-tap-highlight-color: transparent;
+}
+
+.Page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-body);
+}
+
+.PageBody {
+  flex: 1;
+  overflow: auto;
+}
