@@ -1,0 +1,1 @@
+enum ListItemEntryType { folder, dictation }
