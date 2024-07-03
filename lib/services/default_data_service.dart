@@ -15,7 +15,7 @@ class DefaultDataService extends GetxService {
 
   Future<DefaultDataService> init() async {
     final box = GetStorage();
-    box.write("defaultData:created", false); //TODO debug
+    // box.write("defaultData:created", false); //
     final created = box.read<bool>("defaultData:created");
     if(created == null || !created) {
       final jsonStr = await rootBundle.loadString("assets/json/defaultData.json");
